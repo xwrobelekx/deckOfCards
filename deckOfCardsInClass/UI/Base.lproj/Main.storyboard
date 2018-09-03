@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="deckOfCardsInClass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardViewController" customModule="deckOfCardsInClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,43 +27,52 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWv-kF-QfD">
-                                <rect key="frame" x="56" y="587" width="262.5" height="30"/>
+                                <rect key="frame" x="56" y="570" width="262.5" height="47"/>
                                 <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="29"/>
                                 <state key="normal" title="Draw">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvG-Ub-INX"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9za-rp-Ew7">
-                                <rect key="frame" x="150" y="434" width="75.5" height="79"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1pp-O0-98Y">
+                                <rect key="frame" x="103" y="434" width="169" height="38.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coz-Te-BIB">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAk-82-HAY">
-                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="38.5"/>
+                                        <rect key="frame" x="93.5" y="0.0" width="75.5" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coz-Te-BIB">
-                                        <rect key="frame" x="0.0" y="58.5" width="75.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="uaG-hB-Yya"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.74797024873576257" green="0.5681266501375587" blue="0.9540569479695431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UWv-kF-QfD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9gb-Zw-KHH"/>
                             <constraint firstItem="UWv-kF-QfD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Cd0-lF-OnP"/>
-                            <constraint firstItem="9za-rp-Ew7" firstAttribute="top" secondItem="2f2-na-MoW" secondAttribute="bottom" constant="50" id="Pzv-Fh-Qfe"/>
+                            <constraint firstItem="1pp-O0-98Y" firstAttribute="top" secondItem="2f2-na-MoW" secondAttribute="bottom" constant="50" id="EZG-K3-zbw"/>
+                            <constraint firstItem="1pp-O0-98Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lkf-xq-gIQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UWv-kF-QfD" secondAttribute="bottom" constant="50" id="TrD-p7-wwa"/>
                             <constraint firstItem="2f2-na-MoW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WoU-qd-trt"/>
-                            <constraint firstItem="9za-rp-Ew7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kHs-82-MnZ"/>
                             <constraint firstItem="2f2-na-MoW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="sAK-In-QHC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="2f2-na-MoW" id="WZ6-bc-fod"/>
+                        <outlet property="suitLabel" destination="PAk-82-HAY" id="efp-sr-RX1"/>
+                        <outlet property="valueLabel" destination="Coz-Te-BIB" id="JBN-1e-JJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

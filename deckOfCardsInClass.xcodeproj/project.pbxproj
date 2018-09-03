@@ -14,6 +14,7 @@
 		3B1E662F213D9AF00019CFB7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E662E213D9AF00019CFB7 /* Card.swift */; };
 		3B1E6631213DA2790019CFB7 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6630213DA2790019CFB7 /* CardController.swift */; };
 		3B1E6633213DA2F30019CFB7 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6632213DA2F30019CFB7 /* CardViewController.swift */; };
+		3B1E6636213DCE5A0019CFB7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6635213DCE5A0019CFB7 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3B1E662E213D9AF00019CFB7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3B1E6630213DA2790019CFB7 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		3B1E6632213DA2F30019CFB7 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		3B1E6635213DCE5A0019CFB7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3B1E6629213D9A410019CFB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3B1E6634213DCE3D0019CFB7 /* Theme */,
 				3B1E6617213D94980019CFB7 /* AppDelegate.swift */,
 				3B1E661E213D949A0019CFB7 /* Assets.xcassets */,
 				3B1E6620213D949A0019CFB7 /* LaunchScreen.storyboard */,
@@ -108,6 +111,14 @@
 				3B1E661B213D94990019CFB7 /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		3B1E6634213DCE3D0019CFB7 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E6635213DCE5A0019CFB7 /* Theme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			files = (
 				3B1E6633213DA2F30019CFB7 /* CardViewController.swift in Sources */,
 				3B1E662F213D9AF00019CFB7 /* Card.swift in Sources */,
+				3B1E6636213DCE5A0019CFB7 /* Theme.swift in Sources */,
 				3B1E6631213DA2790019CFB7 /* CardController.swift in Sources */,
 				3B1E6618213D94980019CFB7 /* AppDelegate.swift in Sources */,
 			);
